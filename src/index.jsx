@@ -9,25 +9,25 @@ const Home = () => {
       const data = await FetchAnimeList();
       console.log(data.status);
       if (data.status === "success") {
-        setAnimeList(data.data);
+        setAnimeList(data.data.data);
       } else {
         data.status === "failed";
         console.log(data.status);
       }
     };
     getAnimeList();
-  }, [animeList]);
+  }, []);
 
-  console.log(animeList)
+  console.log(animeList.data)
 
   return (
     <>
       <div>
-        {animeList?.data.map((anime) => (
-          <div key={anime.mal_id}>
-            {console.log(anime.mal_id)}
-            <p>{anime.title}test</p>
-          </div>
+        {animeList.map((anime) => (
+          <>
+            <div key={anime.mal_id}>{anime.title}</div>
+            {console.log(anime.title)}
+          </>
         ))}
       </div>
     </>
