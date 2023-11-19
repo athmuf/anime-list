@@ -18,13 +18,13 @@ const Header = () => {
           <ul className="text-lg flex">
             <Navbar
               name="Home"
-              url="./"
+              url={import.meta.env.VITE_APP_BASE_URL + "/"}
               activeMenu={menu === "" ? true : false}
             />
             <Navbar
-              name="My Collection"
-              url="/my-collection"
-              activeMenu={menu === "my-collection" ? true : false}
+              name="My Collections"
+              url={import.meta.env.VITE_APP_BASE_URL + "/my-collections"}
+              activeMenu={menu === "my-collections" ? true : false}
             />
           </ul>
         </div>

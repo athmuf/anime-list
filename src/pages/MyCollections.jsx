@@ -1,11 +1,11 @@
 import Layout from "../components/Layout";
 import Hero from "../components/Hero";
 
-const MyCollection = () => {
+const MyCollections = () => {
   return (
     <Layout>
       <Hero></Hero>
     </Layout>
   );
 };
-export default MyCollection;
+export default MyCollections;

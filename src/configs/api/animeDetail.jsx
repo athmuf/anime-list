@@ -4,7 +4,6 @@ export const FetchAnimeDetail = async (id) => {
     let getData = { status: null, message: null, data: null };
     try {
       const response = await axios.get(`/anime/${id}`);
-      console.log(response)
       getData.status = "success";
       getData.message = "Anime detail successfully loaded"
       getData.data = response.data;

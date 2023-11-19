@@ -25,3 +25,11 @@
 .dark-linear-gradient {
   background: linear-gradient(#00100d99, #00100d);
 }
+
+.dark-linear-gradient-right {
+  background-image: linear-gradient(to right, #00100d , #ffffff00);
+}
+
+.light-linear-gradient-right {
+  background-image: linear-gradient(to right, #ffffff , #ffffff00);
+}
