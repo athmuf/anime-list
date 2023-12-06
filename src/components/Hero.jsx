@@ -15,6 +15,7 @@ const Hero = () => {
               darkMode ? "white" : "midnight"
             } w-full absolute top-0 left-0 right-0 bottom-0 bg-opacity-90`}
           >
+            <div className={`bg-white absolute bottom-0 w-full h-20 ${darkMode ? "light" : "dark"}-to-transparent bg-white`}></div>
             <div className="flex flex-col items-center justify-center h-full">
               <div className="text-magenta text-center">
                 <h1 className="text-4xl font-bold py-2">

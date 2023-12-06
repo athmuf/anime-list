@@ -11,6 +11,7 @@ import { DarkModeContext } from "../context";
 const DetailAnime = () => {
   const { id } = useParams();
   const [animeData, setAnimeData] = useState();
+  // eslint-disable-next-line no-unused-vars
   const [darkMode, setDarkMode] = useContext(DarkModeContext);
 
   useEffect(() => {
@@ -26,7 +27,6 @@ const DetailAnime = () => {
     };
     getAnimeDetail();
   }, [id]);
-  // console.log(animeData)
   return (
     <>
       <Layout>

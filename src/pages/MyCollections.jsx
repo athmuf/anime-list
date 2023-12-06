@@ -1,10 +1,10 @@
 import Layout from "../components/Layout";
-import Hero from "../components/Hero";
+import CollectionList from "../components/CollectionList";
 
 const MyCollections = () => {
   return (
     <Layout>
-      <Hero></Hero>
+      <CollectionList></CollectionList>
     </Layout>
   );
 };

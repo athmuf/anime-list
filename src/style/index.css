@@ -26,6 +26,12 @@
   background: linear-gradient(#00100d99, #00100d);
 }
 
+.light-to-transparent {
+  background: linear-gradient(#ffffff00, #ffffff)
+}
+.dark-to-transparent {
+  background: linear-gradient(#00100d00, #00100d)
+}
 .dark-linear-gradient-right {
   background-image: linear-gradient(to right, #00100d , #ffffff00);
 }
